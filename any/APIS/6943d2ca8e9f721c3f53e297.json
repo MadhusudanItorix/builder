@@ -1,5 +1,5 @@
 {
-  "cts" : 1766072311522,
+  "cts" : 1766073408560,
   "name" : "TBAC_MST_A",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766052554164,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766072311436,
+        "mts" : 1766073406956,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "proxyId" : "6943d2ca8e9f721c3f53e296",
@@ -27,48 +27,18 @@
         "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
           "inbound" : {
-            "444000a6-2820-4bd9-ad88-e470f9c721c9" : [ "v1" ],
-            "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "444000a6-2820-4bd9-ad88-e470f9c721c9" ],
             "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
-            "6455412d-90ff-4518-b389-15c20746ccad" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ]
+            "6455412d-90ff-4518-b389-15c20746ccad" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ],
+            "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "v1" ]
           },
           "outbound" : {
-            "v1" : [ "444000a6-2820-4bd9-ad88-e470f9c721c9" ],
-            "444000a6-2820-4bd9-ad88-e470f9c721c9" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
             "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ],
-            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "6455412d-90ff-4518-b389-15c20746ccad" ]
+            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "6455412d-90ff-4518-b389-15c20746ccad" ],
+            "v1" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ]
           },
-          "allNeighbours" : [ "444000a6-2820-4bd9-ad88-e470f9c721c9", "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "6455412d-90ff-4518-b389-15c20746ccad", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1" ]
+          "allNeighbours" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "6455412d-90ff-4518-b389-15c20746ccad", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1" ]
         },
         "vertexHashMap" : {
-          "444000a6-2820-4bd9-ad88-e470f9c721c9" : {
-            "vertexId" : "444000a6-2820-4bd9-ad88-e470f9c721c9",
-            "vertexType" : "DATABASE",
-            "name" : "mongo",
-            "description" : "mongo",
-            "databaseData" : {
-              "connectorId" : "6790e28b66befd1482d6c3c6",
-              "databaseType" : "MONGODB",
-              "query" : "{\"operation\":\"insert\",\"databaseName\":\"sample_mflix\",\"collection\":\"movies\",\"documents\":[{\"_id\":\"\",\"plot\":\"\",\"genres\":[],\"runtime\":\"\",\"cast\":[],\"poster\":\"\",\"title\":\"\",\"fullplot\":\"\",\"languages\":[],\"released\":\"\",\"directors\":[],\"rated\":\"\",\"awards\":{\"wins\":\"\",\"nominations\":\"\",\"text\":\"\"},\"lastupdated\":\"\",\"year\":\"\",\"imdb\":{\"rating\":\"\",\"votes\":\"\",\"id\":\"\"},\"countries\":[],\"type\":\"\",\"tomatoes\":{\"viewer\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"fresh\":\"\",\"critic\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"rotten\":\"\",\"lastUpdated\":\"\",\"website\":\"\",\"dvd\":\"\",\"production\":\"\",\"boxOffice\":\"\",\"consensus\":\"\"},\"num_mflix_comments\":\"\",\"writers\":[],\"metacritic\":\"\",\"test\":\"\",\"name\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-              "variableName" : "mongo",
-              "connectorName" : "mongo srv",
-              "tenantName" : "sample_mflix",
-              "collectionName" : "movies",
-              "manual" : false,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
           "6455412d-90ff-4518-b389-15c20746ccad" : {
             "vertexId" : "6455412d-90ff-4518-b389-15c20746ccad",
             "vertexType" : "STOP",
@@ -136,8 +106,8 @@
             "name" : "sf",
             "description" : "./",
             "sharedFlowNodeData" : {
-              "sharedFlowId" : "6943f457d4167432fe665c73",
-              "sharedFlowName" : "TestForLoopEvent",
+              "sharedFlowId" : "69428fe9ca79445e02a87f24",
+              "sharedFlowName" : "happFlowTest",
               "inputVariablesMap" : { },
               "importOutputVariables" : false,
               "importedVariables" : [ ],
@@ -219,32 +189,6 @@
         "deployed" : false,
         "deleted" : false
       }
-    }
-  }, {
-    "type" : "connector",
-    "collectionName" : "Connectors.MongoDb.Configuration",
-    "data" : {
-      "mongoDBConfigurationData" : {
-        "id" : "6790e28b66befd1482d6c3c6",
-        "cts" : 1737548427157,
-        "createdUserName" : "Deepak Satuluri",
-        "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1737548427157,
-        "createdBy" : "6768ec5e85cdc202f0e3c5db",
-        "modifiedBy" : "6768ec5e85cdc202f0e3c5db",
-        "name" : "mongo srv",
-        "description" : "this is mongo srv url",
-        "host" : "cluster0.36fr1.mongodb.net/",
-        "scheme" : "mongodb+srv",
-        "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/",
-        "authentication" : {
-          "mongoDbAuthType" : "userNamePassword",
-          "username" : "apiwiz-database",
-          "password" : "oNyFlrO4XM5AWX8Y",
-          "authenticationMechanism" : "DEFAULT"
-        }
-      },
-      "databaseType" : "MongoDb"
     }
   }, {
     "type" : "proxy",
@@ -613,50 +557,67 @@
     "collectionName" : "ApiBuilder.SharedFlows.List",
     "data" : {
       "sharedFlowData" : {
-        "id" : "6943f457d4167432fe665c73",
-        "cts" : 1766061143445,
-        "createdUserName" : "Nihal Ahamed",
-        "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1766061344327,
-        "createdBy" : "6704b7de02afc5238c963878",
-        "modifiedBy" : "6704b7de02afc5238c963878",
-        "taggedTeams" : [ ],
-        "name" : "TestForLoopEvent",
+        "id" : "69428fe9ca79445e02a87f24",
+        "cts" : 1765969897506,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1765970125119,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "taggedTeams" : [ {
+          "id" : "6943d01f8e9f721c3f53e109",
+          "name" : "TBAC_MST_A"
+        } ],
+        "name" : "happFlowTest",
         "description" : "",
         "nodeDataHashMap" : {
           "inbound" : {
-            "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" : [ "v1" ],
-            "7bf76d01-d527-418f-8f84-ef2097ac203e" : [ "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" ]
+            "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" : [ "v1" ],
+            "7029c04e-dbab-4c49-b2b2-feb9150582cf" : [ "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" ]
           },
           "outbound" : {
-            "v1" : [ "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" ],
-            "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" : [ "7bf76d01-d527-418f-8f84-ef2097ac203e" ]
+            "v1" : [ "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" ],
+            "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" : [ "7029c04e-dbab-4c49-b2b2-feb9150582cf" ]
           },
-          "allNeighbours" : [ "7bf76d01-d527-418f-8f84-ef2097ac203e", "v1", "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" ]
+          "allNeighbours" : [ "ec7534e1-f45d-41fe-9a82-f1ab6628ff48", "7029c04e-dbab-4c49-b2b2-feb9150582cf", "v1" ]
         },
         "vertexHashMap" : {
-          "de1629b5-fc51-425e-84b0-cde3fbf54a56" : {
-            "vertexId" : "de1629b5-fc51-425e-84b0-cde3fbf54a56",
-            "vertexType" : "LOGGER",
-            "name" : "value",
-            "description" : "",
-            "logData" : {
-              "data" : "{{value}}",
-              "skip" : false
+          "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" : {
+            "vertexId" : "ec7534e1-f45d-41fe-9a82-f1ab6628ff48",
+            "vertexType" : "DATABASE",
+            "name" : "testKiranDemo",
+            "databaseData" : {
+              "connectorId" : "693fd141962d9f250a980f0c",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"DevD\",\"collection\":\"references\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"description\":\"\",\"createdBy\":\"\",\"modifiedBy\":\"\",\"deprecated\":\"\",\"isDefault\":\"\",\"revisions\":[{\"revision\":\"\",\"schemaId\":\"\",\"status\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\"}],\"comments\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\",\"__v\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "dd",
+              "connectorName" : "tbac-db-test",
+              "tenantName" : "DevD",
+              "collectionName" : "references",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
             },
-            "parentVertex" : "e6b91eef-40a9-4353-98bd-4bb9b225e0dc",
             "imported" : false,
             "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "SHARED_FLOW_START",
-            "name" : "TestForLoopEvent",
+            "name" : "happFlowTest",
             "imported" : false,
             "skipRuntimeVariables" : false
           },
-          "7bf76d01-d527-418f-8f84-ef2097ac203e" : {
-            "vertexId" : "7bf76d01-d527-418f-8f84-ef2097ac203e",
+          "7029c04e-dbab-4c49-b2b2-feb9150582cf" : {
+            "vertexId" : "7029c04e-dbab-4c49-b2b2-feb9150582cf",
             "vertexType" : "SHARED_FLOW_STOP",
             "name" : "Exit",
             "sharedFlowStopData" : {
@@ -670,45 +631,57 @@
             },
             "imported" : false,
             "skipRuntimeVariables" : false
-          },
-          "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" : {
-            "vertexId" : "e6b91eef-40a9-4353-98bd-4bb9b225e0dc",
-            "vertexType" : "LOOP",
-            "name" : "For Loop",
-            "loopData" : {
-              "variables" : [ {
-                "name" : "value",
-                "reference" : "body",
-                "value" : "$.value",
-                "active" : true,
-                "hide" : false,
-                "feelExpression" : false
-              } ],
-              "listType" : "json",
-              "loopList" : [ "{\"value\":2}", "{\"value\":3}", "{\"value\":4}" ],
-              "listName" : "custom",
-              "startingVertex" : [ "de1629b5-fc51-425e-84b0-cde3fbf54a56" ],
-              "loopVertexes" : [ "de1629b5-fc51-425e-84b0-cde3fbf54a56" ],
-              "skip" : false,
-              "showActualErrorMessage" : false
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
           }
         },
         "parentWorkflowIds" : [ ],
-        "inputVariableList" : [ {
-          "name" : "payload",
-          "variableDataType" : "STRING",
+        "inputVariableList" : [ ],
+        "outputVariableList" : [ {
+          "name" : "dd",
           "active" : false,
           "hide" : false,
-          "feelExpression" : false
+          "feelExpression" : false,
+          "envVertexName" : "testKiranDemo",
+          "vertexId" : "ec7534e1-f45d-41fe-9a82-f1ab6628ff48"
         } ],
-        "outputVariableList" : [ ],
         "workspaceTenant" : "stage-data",
-        "misconfigurationMessages" : [ ],
-        "validated" : true
+        "misconfigurationMessages" : [ {
+          "vertexId" : "ec7534e1-f45d-41fe-9a82-f1ab6628ff48",
+          "vertexName" : "testKiranDemo",
+          "vertexType" : "DATABASE",
+          "missingTeams" : [ "QA Team" ]
+        } ],
+        "validated" : false
       }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "693fd141962d9f250a980f0c",
+        "cts" : 1765790017480,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1765970268534,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "name" : "tbac-db-test",
+        "description" : "tbac-db-test",
+        "host" : "10.10.12.20:27017/apiwiz",
+        "scheme" : "mongodb",
+        "url" : "mongodb://apiwiz:Kufas2spaprunof@10.10.12.20:27017/apiwiz?authMechanism=DEFAULT&authSource=admin&tls=false",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz",
+          "authenticationDatabase" : "admin",
+          "authenticationMechanism" : "DEFAULT"
+        },
+        "ssl" : {
+          "sslConnection" : false,
+          "tlsAllowInvalidHostnames" : false
+        }
+      },
+      "databaseType" : "MongoDb"
     }
   } ],
   "metadata" : {
@@ -717,9 +690,9 @@
       "proxyid" : "6943d2ca8e9f721c3f53e296",
       "name" : "TBAC_MST_A",
       "attachedEnv" : "",
-      "attachedSharedFlows" : [ "6943f457d4167432fe665c73" ],
+      "attachedSharedFlows" : [ "69428fe9ca79445e02a87f24" ],
       "attachedProxies" : [ "6652b6264289865ae027e453" ],
-      "attachedConnectors" : [ "6790e28b66befd1482d6c3c6" ]
+      "attachedConnectors" : [ ]
     }, {
       "id" : "6652b6264289865ae027e453",
       "proxyid" : "6652b6264289865ae027e452",
@@ -734,16 +707,16 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ {
-      "id" : "6943f457d4167432fe665c73",
-      "name" : "TestForLoopEvent",
+      "id" : "69428fe9ca79445e02a87f24",
+      "name" : "happFlowTest",
       "description" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "693fd141962d9f250a980f0c" ]
     } ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "6790e28b66befd1482d6c3c6",
-      "name" : "mongo srv"
+      "id" : "693fd141962d9f250a980f0c",
+      "name" : "tbac-db-test"
     } ]
   }
 }
