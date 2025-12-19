@@ -1,5 +1,5 @@
 {
-  "cts" : 1766123791599,
+  "cts" : 1766124471203,
   "name" : "TBAC_MST_A",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766052554164,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766123791445,
+        "mts" : 1766124471123,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "proxyId" : "6943d2ca8e9f721c3f53e296",
@@ -30,15 +30,17 @@
             "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
             "6455412d-90ff-4518-b389-15c20746ccad" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ],
             "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "v1" ],
-            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ]
+            "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ],
+            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
           },
           "outbound" : {
             "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ],
             "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "6455412d-90ff-4518-b389-15c20746ccad" ],
             "v1" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
-            "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ]
+            "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ],
+            "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ]
           },
-          "allNeighbours" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb", "6455412d-90ff-4518-b389-15c20746ccad", "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1" ]
+          "allNeighbours" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb", "6455412d-90ff-4518-b389-15c20746ccad", "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1", "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
         },
         "vertexHashMap" : {
           "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : {
@@ -177,6 +179,34 @@
                 }
               }
             }
+          },
+          "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : {
+            "vertexId" : "7e8f6d5f-eae8-4eef-804a-5d6007063ffa",
+            "vertexType" : "DATABASE",
+            "name" : "q",
+            "description" : "q",
+            "databaseData" : {
+              "connectorId" : "6790e28b66befd1482d6c3c6",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"ewb-poc\",\"collection\":\"user.accounts.collection\",\"documents\":[{\"_id\":\"\",\"transactionId\":\"\",\"amount\":\"\",\"currency\":\"\",\"timestamp\":\"\",\"status\":\"\",\"remarks\":\"\",\"credit\":\"\",\"debit\":\"\",\"present\":\"\",\"orderingCustomerName\":\"\",\"creditAccountIBAN\":\"\",\"debitAccountIBAN\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "q",
+              "connectorName" : "mongo srv",
+              "tenantName" : "ewb-poc",
+              "collectionName" : "user.accounts.collection",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
@@ -683,6 +713,32 @@
         "validated" : true
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "6790e28b66befd1482d6c3c6",
+        "cts" : 1737548427157,
+        "createdUserName" : "Deepak Satuluri",
+        "modifiedUserName" : "Deepak Satuluri",
+        "mts" : 1737548427157,
+        "createdBy" : "6768ec5e85cdc202f0e3c5db",
+        "modifiedBy" : "6768ec5e85cdc202f0e3c5db",
+        "name" : "mongo srv",
+        "description" : "this is mongo srv url",
+        "host" : "cluster0.36fr1.mongodb.net/",
+        "scheme" : "mongodb+srv",
+        "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz-database",
+          "password" : "oNyFlrO4XM5AWX8Y",
+          "authenticationMechanism" : "DEFAULT"
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -692,7 +748,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ "69428fe9ca79445e02a87f24" ],
       "attachedProxies" : [ "6652b6264289865ae027e453" ],
-      "attachedConnectors" : [ "694268cdca79445e02a875e1" ]
+      "attachedConnectors" : [ "6790e28b66befd1482d6c3c6", "694268cdca79445e02a875e1" ]
     }, {
       "id" : "6652b6264289865ae027e453",
       "proxyid" : "6652b6264289865ae027e452",
@@ -717,6 +773,9 @@
     "connectorMetadataDetailsDtoList" : [ {
       "id" : "694268cdca79445e02a875e1",
       "name" : "TestTBAC-MST"
+    }, {
+      "id" : "6790e28b66befd1482d6c3c6",
+      "name" : "mongo srv"
     } ]
   }
 }
