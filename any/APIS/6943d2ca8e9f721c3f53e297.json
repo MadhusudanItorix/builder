@@ -1,5 +1,5 @@
 {
-  "cts" : 1766078251202,
+  "cts" : 1766123791599,
   "name" : "TBAC_MST_A",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766052554164,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766078248564,
+        "mts" : 1766123791445,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "proxyId" : "6943d2ca8e9f721c3f53e296",
@@ -180,6 +180,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1766123744556,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766123345291,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
           "status" : "Review",
           "cts" : 1766072047926,
           "lastModifiedBy" : "676be2be391f97263bb0b16c",
@@ -621,10 +631,10 @@
         "id" : "69428fe9ca79445e02a87f24",
         "cts" : 1765969897506,
         "createdUserName" : "Kiran Kamble",
-        "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1765970125119,
+        "modifiedUserName" : "Madhusudan Tripathy",
+        "mts" : 1766123320635,
         "createdBy" : "685b8a3df073051941d15c1c",
-        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ {
           "id" : "6943d01f8e9f721c3f53e109",
           "name" : "TBAC_MST_A"
@@ -633,43 +643,14 @@
         "description" : "",
         "nodeDataHashMap" : {
           "inbound" : {
-            "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" : [ "v1" ],
-            "7029c04e-dbab-4c49-b2b2-feb9150582cf" : [ "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" ]
+            "7029c04e-dbab-4c49-b2b2-feb9150582cf" : [ "v1" ]
           },
           "outbound" : {
-            "v1" : [ "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" ],
-            "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" : [ "7029c04e-dbab-4c49-b2b2-feb9150582cf" ]
+            "v1" : [ "7029c04e-dbab-4c49-b2b2-feb9150582cf" ]
           },
-          "allNeighbours" : [ "ec7534e1-f45d-41fe-9a82-f1ab6628ff48", "7029c04e-dbab-4c49-b2b2-feb9150582cf", "v1" ]
+          "allNeighbours" : [ "7029c04e-dbab-4c49-b2b2-feb9150582cf", "v1" ]
         },
         "vertexHashMap" : {
-          "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" : {
-            "vertexId" : "ec7534e1-f45d-41fe-9a82-f1ab6628ff48",
-            "vertexType" : "DATABASE",
-            "name" : "testKiranDemo",
-            "databaseData" : {
-              "connectorId" : "693fd141962d9f250a980f0c",
-              "databaseType" : "MONGODB",
-              "query" : "{\"operation\":\"insert\",\"databaseName\":\"DevD\",\"collection\":\"references\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"description\":\"\",\"createdBy\":\"\",\"modifiedBy\":\"\",\"deprecated\":\"\",\"isDefault\":\"\",\"revisions\":[{\"revision\":\"\",\"schemaId\":\"\",\"status\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\"}],\"comments\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\",\"__v\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-              "variableName" : "dd",
-              "connectorName" : "tbac-db-test",
-              "tenantName" : "DevD",
-              "collectionName" : "references",
-              "manual" : false,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "SHARED_FLOW_START",
@@ -682,7 +663,7 @@
             "vertexType" : "SHARED_FLOW_STOP",
             "name" : "Exit",
             "sharedFlowStopData" : {
-              "stopNodeAction" : "TERMINATE_WITH_RESPONSE",
+              "stopNodeAction" : "CONTINUE",
               "sharedFlowResponse" : {
                 "statusCode" : 200,
                 "body" : {
@@ -696,53 +677,11 @@
         },
         "parentWorkflowIds" : [ ],
         "inputVariableList" : [ ],
-        "outputVariableList" : [ {
-          "name" : "dd",
-          "active" : false,
-          "hide" : false,
-          "feelExpression" : false,
-          "envVertexName" : "testKiranDemo",
-          "vertexId" : "ec7534e1-f45d-41fe-9a82-f1ab6628ff48"
-        } ],
+        "outputVariableList" : [ ],
         "workspaceTenant" : "stage-data",
-        "misconfigurationMessages" : [ {
-          "vertexId" : "ec7534e1-f45d-41fe-9a82-f1ab6628ff48",
-          "vertexName" : "testKiranDemo",
-          "vertexType" : "DATABASE",
-          "missingTeams" : [ "QA Team" ]
-        } ],
-        "validated" : false
+        "misconfigurationMessages" : [ ],
+        "validated" : true
       }
-    }
-  }, {
-    "type" : "connector",
-    "collectionName" : "Connectors.MongoDb.Configuration",
-    "data" : {
-      "mongoDBConfigurationData" : {
-        "id" : "693fd141962d9f250a980f0c",
-        "cts" : 1765790017480,
-        "createdUserName" : "Kiran Kamble",
-        "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1765970268534,
-        "createdBy" : "685b8a3df073051941d15c1c",
-        "modifiedBy" : "685b8a3df073051941d15c1c",
-        "name" : "tbac-db-test",
-        "description" : "tbac-db-test",
-        "host" : "10.10.12.20:27017/apiwiz",
-        "scheme" : "mongodb",
-        "url" : "mongodb://apiwiz:Kufas2spaprunof@10.10.12.20:27017/apiwiz?authMechanism=DEFAULT&authSource=admin&tls=false",
-        "authentication" : {
-          "mongoDbAuthType" : "userNamePassword",
-          "username" : "apiwiz",
-          "authenticationDatabase" : "admin",
-          "authenticationMechanism" : "DEFAULT"
-        },
-        "ssl" : {
-          "sslConnection" : false,
-          "tlsAllowInvalidHostnames" : false
-        }
-      },
-      "databaseType" : "MongoDb"
     }
   } ],
   "metadata" : {
@@ -773,14 +712,11 @@
       "description" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "693fd141962d9f250a980f0c" ]
+      "attachedConnectors" : [ ]
     } ],
     "connectorMetadataDetailsDtoList" : [ {
       "id" : "694268cdca79445e02a875e1",
       "name" : "TestTBAC-MST"
-    }, {
-      "id" : "693fd141962d9f250a980f0c",
-      "name" : "tbac-db-test"
     } ]
   }
 }
