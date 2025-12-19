@@ -1,5 +1,5 @@
 {
-  "cts" : 1766135552480,
+  "cts" : 1766135960005,
   "name" : "TBAC_MST_A",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766052554164,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766135552403,
+        "mts" : 1766135959844,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -28,20 +28,22 @@
         "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
           "inbound" : {
-            "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
+            "5c06b9bf-78de-4a51-968e-7e7049235d94" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
             "6455412d-90ff-4518-b389-15c20746ccad" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ],
             "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "v1" ],
             "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ],
-            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
+            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ],
+            "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "5c06b9bf-78de-4a51-968e-7e7049235d94" ]
           },
           "outbound" : {
-            "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ],
+            "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "5c06b9bf-78de-4a51-968e-7e7049235d94" ],
             "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "6455412d-90ff-4518-b389-15c20746ccad" ],
             "v1" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
             "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ],
-            "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ]
+            "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ],
+            "5c06b9bf-78de-4a51-968e-7e7049235d94" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ]
           },
-          "allNeighbours" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb", "6455412d-90ff-4518-b389-15c20746ccad", "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1", "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
+          "allNeighbours" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb", "6455412d-90ff-4518-b389-15c20746ccad", "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1", "5c06b9bf-78de-4a51-968e-7e7049235d94", "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
         },
         "vertexHashMap" : {
           "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : {
@@ -180,6 +182,28 @@
                 }
               }
             }
+          },
+          "5c06b9bf-78de-4a51-968e-7e7049235d94" : {
+            "vertexId" : "5c06b9bf-78de-4a51-968e-7e7049235d94",
+            "vertexType" : "REDIS_CACHING",
+            "name" : "test",
+            "description" : "./",
+            "redisCachingData" : {
+              "redisCacheConnectorId" : "68529fc7afeab91fd3a9a218",
+              "cachingOperationList" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : true,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : {
             "vertexId" : "7e8f6d5f-eae8-4eef-804a-5d6007063ffa",
@@ -754,6 +778,22 @@
     }
   }, {
     "type" : "connector",
+    "collectionName" : "Connectors.Redis.Cache",
+    "data" : {
+      "redisCacheConnectorData" : {
+        "id" : "68529fc7afeab91fd3a9a218",
+        "cts" : 1750245319578,
+        "createdUserName" : "Akshatha sm",
+        "createdBy" : "Akshatha sm",
+        "name" : "test",
+        "description" : "",
+        "host" : "2.tcp.us-cal-1.ngrok.io",
+        "port" : 11714,
+        "password" : "WRl6RLyup09riMa"
+      }
+    }
+  }, {
+    "type" : "connector",
     "collectionName" : "Connectors.MongoDb.Configuration",
     "data" : {
       "mongoDBConfigurationData" : {
@@ -787,7 +827,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ "69428fe9ca79445e02a87f24" ],
       "attachedProxies" : [ "6652b6264289865ae027e453" ],
-      "attachedConnectors" : [ "6790e28b66befd1482d6c3c6", "694268cdca79445e02a875e1" ]
+      "attachedConnectors" : [ "6790e28b66befd1482d6c3c6", "68529fc7afeab91fd3a9a218", "694268cdca79445e02a875e1" ]
     }, {
       "id" : "6652b6264289865ae027e453",
       "proxyid" : "6652b6264289865ae027e452",
@@ -812,6 +852,9 @@
     "connectorMetadataDetailsDtoList" : [ {
       "id" : "694268cdca79445e02a875e1",
       "name" : "TestTBAC-MST"
+    }, {
+      "id" : "68529fc7afeab91fd3a9a218",
+      "name" : "test"
     }, {
       "id" : "6790e28b66befd1482d6c3c6",
       "name" : "mongo srv"
