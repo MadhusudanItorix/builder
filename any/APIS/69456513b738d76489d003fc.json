@@ -1,5 +1,5 @@
 {
-  "cts" : 1766216533045,
+  "cts" : 1766216649768,
   "name" : "OPAA",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766155539115,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766216532962,
+        "mts" : 1766216649761,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -47,9 +47,9 @@
               "connectorName" : "opa-connector-a",
               "policyId" : "674d4e9b98deb60368717a2d",
               "policyName" : "Role Based Access Control (RBAC)",
-              "serverUrl" : "",
-              "packagePath" : "",
-              "token" : "",
+              "serverUrl" : "https://opa-connector.apiwiz.io",
+              "packagePath" : "/app/rbac",
+              "token" : "5432",
               "inputData" : "",
               "graphqlAuthorization" : false,
               "skip" : false,
