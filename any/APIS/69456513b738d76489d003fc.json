@@ -1,5 +1,5 @@
 {
-  "cts" : 1766215250085,
+  "cts" : 1766216533045,
   "name" : "OPAA",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766155539115,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766215250076,
+        "mts" : 1766216532962,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -28,16 +28,44 @@
         "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
           "inbound" : {
-            "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" : [ "v1" ],
-            "6778dbb9-d109-45f3-a689-a63aecf41551" : [ "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" ]
+            "17f40644-846e-42ad-8547-db3a783704ca" : [ "v1" ],
+            "6778dbb9-d109-45f3-a689-a63aecf41551" : [ "17f40644-846e-42ad-8547-db3a783704ca" ]
           },
           "outbound" : {
-            "v1" : [ "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" ],
-            "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" : [ "6778dbb9-d109-45f3-a689-a63aecf41551" ]
+            "v1" : [ "17f40644-846e-42ad-8547-db3a783704ca" ],
+            "17f40644-846e-42ad-8547-db3a783704ca" : [ "6778dbb9-d109-45f3-a689-a63aecf41551" ]
           },
-          "allNeighbours" : [ "v1", "951d5eee-df9c-420f-8cfc-dfd9a5dc0737", "6778dbb9-d109-45f3-a689-a63aecf41551" ]
+          "allNeighbours" : [ "17f40644-846e-42ad-8547-db3a783704ca", "v1", "6778dbb9-d109-45f3-a689-a63aecf41551" ]
         },
         "vertexHashMap" : {
+          "17f40644-846e-42ad-8547-db3a783704ca" : {
+            "vertexId" : "17f40644-846e-42ad-8547-db3a783704ca",
+            "vertexType" : "ENTITLEMENT",
+            "name" : "m",
+            "entitlementData" : {
+              "connectorId" : "66fa9be66f8f1845387da8ee",
+              "connectorName" : "opa-connector-a",
+              "policyId" : "674d4e9b98deb60368717a2d",
+              "policyName" : "Role Based Access Control (RBAC)",
+              "serverUrl" : "",
+              "packagePath" : "",
+              "token" : "",
+              "inputData" : "",
+              "graphqlAuthorization" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
@@ -73,34 +101,6 @@
                 "type" : "JSON"
               }
             }
-          },
-          "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" : {
-            "vertexId" : "951d5eee-df9c-420f-8cfc-dfd9a5dc0737",
-            "vertexType" : "ENTITLEMENT",
-            "name" : "asa",
-            "entitlementData" : {
-              "connectorId" : "66fa9be66f8f1845387da8ef",
-              "connectorName" : "opa-connector",
-              "policyId" : "67d959ee51232468ef4b6171",
-              "policyName" : "Rest",
-              "serverUrl" : "https://opa-connector.apiwiz.io",
-              "packagePath" : "/apiwiz/builder_agent",
-              "token" : "5432",
-              "inputData" : "",
-              "graphqlAuthorization" : false,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
@@ -129,15 +129,15 @@
     "collectionName" : "Connectors.Entitlement",
     "data" : {
       "apiBuilderEntitlementServerDTOData" : {
-        "id" : "66fa9be66f8f1845387da8ef",
-        "name" : "opa-connector",
+        "id" : "66fa9be66f8f1845387da8ee",
+        "name" : "opa-connector-a",
         "serverUrl" : "https://opa-connector.apiwiz.io",
         "token" : "5432"
       },
       "apiBuilderEntitlementPolicyDTOData" : {
-        "id" : "67d959ee51232468ef4b6171",
-        "name" : "Rest",
-        "packagePath" : "/apiwiz/builder_agent"
+        "id" : "674d4e9b98deb60368717a2d",
+        "name" : "Role Based Access Control (RBAC)",
+        "packagePath" : "/app/rbac"
       }
     }
   } ],
@@ -149,7 +149,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "66fa9be66f8f1845387da8ef", "67d959ee51232468ef4b6171" ]
+      "attachedConnectors" : [ "66fa9be66f8f1845387da8ee", "674d4e9b98deb60368717a2d" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -158,11 +158,11 @@
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "66fa9be66f8f1845387da8ef",
-      "name" : "opa-connector"
+      "id" : "66fa9be66f8f1845387da8ee",
+      "name" : "opa-connector-a"
     }, {
-      "id" : "67d959ee51232468ef4b6171",
-      "name" : "Rest"
+      "id" : "674d4e9b98deb60368717a2d",
+      "name" : "Role Based Access Control (RBAC)"
     } ]
   }
 }
