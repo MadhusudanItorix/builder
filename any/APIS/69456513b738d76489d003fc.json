@@ -1,5 +1,5 @@
 {
-  "cts" : 1766155539120,
+  "cts" : 1766213130745,
   "name" : "OPAA",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766155539115,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766155539115,
+        "mts" : 1766213130640,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -28,12 +28,14 @@
         "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
           "inbound" : {
-            "6778dbb9-d109-45f3-a689-a63aecf41551" : [ "v1" ]
+            "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" : [ "v1" ],
+            "6778dbb9-d109-45f3-a689-a63aecf41551" : [ "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" ]
           },
           "outbound" : {
-            "v1" : [ "6778dbb9-d109-45f3-a689-a63aecf41551" ]
+            "v1" : [ "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" ],
+            "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" : [ "6778dbb9-d109-45f3-a689-a63aecf41551" ]
           },
-          "allNeighbours" : [ "v1", "6778dbb9-d109-45f3-a689-a63aecf41551" ]
+          "allNeighbours" : [ "v1", "951d5eee-df9c-420f-8cfc-dfd9a5dc0737", "6778dbb9-d109-45f3-a689-a63aecf41551" ]
         },
         "vertexHashMap" : {
           "v1" : {
@@ -71,6 +73,34 @@
                 "type" : "JSON"
               }
             }
+          },
+          "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" : {
+            "vertexId" : "951d5eee-df9c-420f-8cfc-dfd9a5dc0737",
+            "vertexType" : "ENTITLEMENT",
+            "name" : "asa",
+            "entitlementData" : {
+              "connectorId" : "66fa9be66f8f1845387da8ef",
+              "connectorName" : "opa-connector",
+              "policyId" : "67d959ee51232468ef4b6171",
+              "policyName" : "Rest",
+              "serverUrl" : "",
+              "packagePath" : "",
+              "token" : "",
+              "inputData" : "",
+              "graphqlAuthorization" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
@@ -90,8 +120,24 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
-        "deleted" : false,
-        "deployed" : false
+        "deployed" : false,
+        "deleted" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.Entitlement",
+    "data" : {
+      "apiBuilderEntitlementServerDTOData" : {
+        "id" : "66fa9be66f8f1845387da8ef",
+        "name" : "opa-connector",
+        "serverUrl" : "https://opa-connector.apiwiz.io",
+        "token" : "5432"
+      },
+      "apiBuilderEntitlementPolicyDTOData" : {
+        "id" : "67d959ee51232468ef4b6171",
+        "name" : "Rest",
+        "packagePath" : "/apiwiz/builder_agent"
       }
     }
   } ],
@@ -103,7 +149,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "66fa9be66f8f1845387da8ef", "67d959ee51232468ef4b6171" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -111,6 +157,12 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "66fa9be66f8f1845387da8ef",
+      "name" : "opa-connector"
+    }, {
+      "id" : "67d959ee51232468ef4b6171",
+      "name" : "Rest"
+    } ]
   }
 }
