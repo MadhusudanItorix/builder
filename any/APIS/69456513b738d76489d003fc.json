@@ -1,5 +1,5 @@
 {
-  "cts" : 1766213130745,
+  "cts" : 1766213155920,
   "name" : "OPAA",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766155539115,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766213130640,
+        "mts" : 1766213155769,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -83,9 +83,9 @@
               "connectorName" : "opa-connector",
               "policyId" : "67d959ee51232468ef4b6171",
               "policyName" : "Rest",
-              "serverUrl" : "",
-              "packagePath" : "",
-              "token" : "",
+              "serverUrl" : "https://opa-connector.apiwiz.io",
+              "packagePath" : "/apiwiz/builder_agent",
+              "token" : "5432",
               "inputData" : "",
               "graphqlAuthorization" : false,
               "skip" : false,
