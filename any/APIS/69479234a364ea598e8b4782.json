@@ -1,0 +1,719 @@
+{
+  "cts" : 1766310452806,
+  "name" : "NONA",
+  "exportedBy" : "Madhusudan Tripathy",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69479234a364ea598e8b4782",
+        "cts" : 1766298164247,
+        "createdUserName" : "Madhusudan Tripathy",
+        "modifiedUserName" : "Madhusudan Tripathy",
+        "mts" : 1766310452725,
+        "createdBy" : "676be2be391f97263bb0b16c",
+        "modifiedBy" : "676be2be391f97263bb0b16c",
+        "taggedTeams" : [ ],
+        "proxyId" : "69479234a364ea598e8b4781",
+        "revision" : 1,
+        "name" : "NONA",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/SASASA",
+        "pathArray" : [ "SASASA" ],
+        "revisionStatus" : "REVIEW",
+        "locked" : true,
+        "lockedBy" : "Madhusudan Tripathy",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "6f6f55d7-1b0e-4589-a992-725c4a0983da" : [ "v1" ],
+            "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ],
+            "55316187-2915-4b1c-9841-3d1935da422d" : [ "75e01f65-f7c1-4159-871e-856a49fb53ee" ],
+            "118be731-6f44-439c-8983-041a80dc4d50" : [ "55316187-2915-4b1c-9841-3d1935da422d" ],
+            "75e01f65-f7c1-4159-871e-856a49fb53ee" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ],
+            "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "6f6f55d7-1b0e-4589-a992-725c4a0983da" ]
+          },
+          "outbound" : {
+            "v1" : [ "6f6f55d7-1b0e-4589-a992-725c4a0983da" ],
+            "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ],
+            "75e01f65-f7c1-4159-871e-856a49fb53ee" : [ "55316187-2915-4b1c-9841-3d1935da422d" ],
+            "55316187-2915-4b1c-9841-3d1935da422d" : [ "118be731-6f44-439c-8983-041a80dc4d50" ],
+            "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "75e01f65-f7c1-4159-871e-856a49fb53ee" ],
+            "6f6f55d7-1b0e-4589-a992-725c4a0983da" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ]
+          },
+          "allNeighbours" : [ "118be731-6f44-439c-8983-041a80dc4d50", "55316187-2915-4b1c-9841-3d1935da422d", "v1", "d47aeb83-30ee-426a-964a-9fe5447f5d9e", "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe", "6f6f55d7-1b0e-4589-a992-725c4a0983da", "75e01f65-f7c1-4159-871e-856a49fb53ee" ]
+        },
+        "vertexHashMap" : {
+          "118be731-6f44-439c-8983-041a80dc4d50" : {
+            "vertexId" : "118be731-6f44-439c-8983-041a80dc4d50",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "55316187-2915-4b1c-9841-3d1935da422d" : {
+            "vertexId" : "55316187-2915-4b1c-9841-3d1935da422d",
+            "vertexType" : "CALL_WORKFLOW",
+            "name" : "Call Workflow",
+            "description" : "",
+            "callWorkflowData" : {
+              "childWorkflowId" : "69453f73b738d76489cfffe6",
+              "childWorkflowName" : "YOYO",
+              "virtualHostId" : "66dc0ef2e836d076001b628b",
+              "virtualHostName" : "stage-data",
+              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/abc-oo",
+              "apiMethod" : "GET",
+              "request" : {
+                "headerParams" : [ {
+                  "name" : "name",
+                  "value" : ""
+                } ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "data" : "{}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : true,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : {
+            "vertexId" : "d47aeb83-30ee-426a-964a-9fe5447f5d9e",
+            "vertexType" : "REDIS_CACHING",
+            "name" : "red",
+            "description" : "",
+            "redisCachingData" : {
+              "redisCacheConnectorId" : "68398acdbb9e4f4731cd78c3",
+              "cachingOperationList" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : true,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : {
+            "vertexId" : "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe",
+            "vertexType" : "TARGET",
+            "name" : "curl",
+            "target" : {
+              "name" : "curl",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "www.keycdn.com",
+                "path" : "/",
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "75e01f65-f7c1-4159-871e-856a49fb53ee" : {
+            "vertexId" : "75e01f65-f7c1-4159-871e-856a49fb53ee",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "sf",
+            "description" : "",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "6943f457d4167432fe665c73",
+              "sharedFlowName" : "TestForLoopEvent",
+              "inputVariablesMap" : { },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : true,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "6f6f55d7-1b0e-4589-a992-725c4a0983da" : {
+            "vertexId" : "6f6f55d7-1b0e-4589-a992-725c4a0983da",
+            "vertexType" : "DATABASE",
+            "name" : "qQ",
+            "description" : "Q",
+            "databaseData" : {
+              "connectorId" : "682e31412d820556c5f23c86",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"DevD\",\"collection\":\"ApiBuilder.Data.Archival.List\",\"documents\":[{}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "AA",
+              "connectorName" : "Stage-Data DB",
+              "tenantName" : "DevD",
+              "collectionName" : "ApiBuilder.Data.Archival.List",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1766310088398,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766309833598,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766309793043,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766308999291,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766308196412,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766308100877,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : ","
+        }, {
+          "status" : "Review",
+          "cts" : 1766307966557,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766307430558,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766305020329,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766304884490,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766304395198,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766302916883,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766302861207,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766302761920,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766302706652,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766302681679,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Draft",
+          "cts" : 1766298164247,
+          "lastModifiedBy" : "Madhusudan Tripathy",
+          "description" : "Created new proxy"
+        } ],
+        "virtualHostList" : [ ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deployed" : false,
+        "deleted" : false
+      }
+    }
+  }, {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69453f73b738d76489cfffe6",
+        "cts" : 1766145907921,
+        "createdUserName" : "Madhusudan Tripathy",
+        "modifiedUserName" : "Madhusudan Tripathy",
+        "mts" : 1766307305124,
+        "createdBy" : "676be2be391f97263bb0b16c",
+        "modifiedBy" : "676be2be391f97263bb0b16c",
+        "taggedTeams" : [ ],
+        "proxyId" : "69453f73b738d76489cfffe5",
+        "revision" : 1,
+        "name" : "YOYO",
+        "description" : "YOY",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/abc-oo",
+        "pathArray" : [ "abc-oo" ],
+        "revisionStatus" : "APPROVED",
+        "locked" : true,
+        "lockedBy" : "Madhusudan Tripathy",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" : [ "v1" ],
+            "81248c6c-bacb-46ee-8eef-d6a0b8c79abe" : [ "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" ]
+          },
+          "outbound" : {
+            "v1" : [ "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" ],
+            "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" : [ "81248c6c-bacb-46ee-8eef-d6a0b8c79abe" ]
+          },
+          "allNeighbours" : [ "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175", "81248c6c-bacb-46ee-8eef-d6a0b8c79abe", "v1" ]
+        },
+        "vertexHashMap" : {
+          "81248c6c-bacb-46ee-8eef-d6a0b8c79abe" : {
+            "vertexId" : "81248c6c-bacb-46ee-8eef-d6a0b8c79abe",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" : {
+            "vertexId" : "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 2,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Approved",
+          "cts" : 1766307220169,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766307201849,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766307165444,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766307165126,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Draft",
+          "cts" : 1766145907921,
+          "lastModifiedBy" : "Madhusudan Tripathy",
+          "description" : "Created new proxy"
+        } ],
+        "virtualHostList" : [ {
+          "id" : "66dc0ef2e836d076001b628b",
+          "name" : "stage-data",
+          "timeStamp" : 1766307304957,
+          "environmentId" : "66fe733e5b8c4541af925658",
+          "deployedBy" : "Madhusudan Tripathy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deployed" : true,
+        "deleted" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.Redis.Cache",
+    "data" : {
+      "redisCacheConnectorData" : {
+        "id" : "68398acdbb9e4f4731cd78c3",
+        "cts" : 1748601549865,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "divakar v",
+        "mts" : 1750245241105,
+        "createdBy" : "divakar v",
+        "modifiedBy" : "divakar v",
+        "name" : "redis connection 1",
+        "description" : "",
+        "host" : "2.tcp.us-cal-1.ngrok.io",
+        "port" : 11714,
+        "password" : "WRl6RLyup09riMa"
+      }
+    }
+  }, {
+    "type" : "sharedFlow",
+    "collectionName" : "ApiBuilder.SharedFlows.List",
+    "data" : {
+      "sharedFlowData" : {
+        "id" : "6943f457d4167432fe665c73",
+        "cts" : 1766061143445,
+        "createdUserName" : "Nihal Ahamed",
+        "modifiedUserName" : "Madhusudan Tripathy",
+        "mts" : 1766307534477,
+        "createdBy" : "6704b7de02afc5238c963878",
+        "modifiedBy" : "676be2be391f97263bb0b16c",
+        "taggedTeams" : [ ],
+        "name" : "TestForLoopEvent",
+        "description" : "",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" : [ "v1" ],
+            "7375b1fb-337d-4910-952b-25830dcb359a" : [ "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" ],
+            "7bf76d01-d527-418f-8f84-ef2097ac203e" : [ "7375b1fb-337d-4910-952b-25830dcb359a" ]
+          },
+          "outbound" : {
+            "v1" : [ "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" ],
+            "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" : [ "7375b1fb-337d-4910-952b-25830dcb359a" ],
+            "7375b1fb-337d-4910-952b-25830dcb359a" : [ "7bf76d01-d527-418f-8f84-ef2097ac203e" ]
+          },
+          "allNeighbours" : [ "7375b1fb-337d-4910-952b-25830dcb359a", "7bf76d01-d527-418f-8f84-ef2097ac203e", "v1", "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" ]
+        },
+        "vertexHashMap" : {
+          "de1629b5-fc51-425e-84b0-cde3fbf54a56" : {
+            "vertexId" : "de1629b5-fc51-425e-84b0-cde3fbf54a56",
+            "vertexType" : "LOGGER",
+            "name" : "value",
+            "description" : "",
+            "logData" : {
+              "data" : "{{value}}",
+              "skip" : false
+            },
+            "parentVertex" : "e6b91eef-40a9-4353-98bd-4bb9b225e0dc",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "7375b1fb-337d-4910-952b-25830dcb359a" : {
+            "vertexId" : "7375b1fb-337d-4910-952b-25830dcb359a",
+            "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+            "name" : "transform",
+            "jsonToXmlTransformationData" : {
+              "sourceVariable" : "payload",
+              "targetVariable" : "target",
+              "jsonArray" : false,
+              "rootElementName" : "",
+              "objectElementName" : "",
+              "attributeList" : [ ],
+              "staticElementAttributeHashMap" : { },
+              "staticPathAttributeArrayList" : [ ],
+              "skip" : true,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "SHARED_FLOW_START",
+            "name" : "TestForLoopEvent",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "7bf76d01-d527-418f-8f84-ef2097ac203e" : {
+            "vertexId" : "7bf76d01-d527-418f-8f84-ef2097ac203e",
+            "vertexType" : "SHARED_FLOW_STOP",
+            "name" : "Exit",
+            "sharedFlowStopData" : {
+              "stopNodeAction" : "CONTINUE",
+              "sharedFlowResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "type" : "JSON"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" : {
+            "vertexId" : "e6b91eef-40a9-4353-98bd-4bb9b225e0dc",
+            "vertexType" : "LOOP",
+            "name" : "For Loop",
+            "loopData" : {
+              "variables" : [ {
+                "name" : "value",
+                "reference" : "body",
+                "value" : "$.value",
+                "active" : true,
+                "hide" : false,
+                "feelExpression" : false
+              } ],
+              "listType" : "json",
+              "loopList" : [ "{\"value\":2}", "{\"value\":3}", "{\"value\":4}" ],
+              "listName" : "custom",
+              "startingVertex" : [ "de1629b5-fc51-425e-84b0-cde3fbf54a56" ],
+              "loopVertexes" : [ "de1629b5-fc51-425e-84b0-cde3fbf54a56" ],
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "parentWorkflowIds" : [ ],
+        "inputVariableList" : [ {
+          "name" : "payload",
+          "variableDataType" : "STRING",
+          "active" : false,
+          "hide" : false,
+          "feelExpression" : false
+        } ],
+        "outputVariableList" : [ {
+          "name" : "target",
+          "active" : false,
+          "hide" : false,
+          "feelExpression" : false,
+          "envVertexName" : "transform",
+          "vertexId" : "7375b1fb-337d-4910-952b-25830dcb359a"
+        } ],
+        "workspaceTenant" : "stage-data",
+        "misconfigurationMessages" : [ ],
+        "validated" : true
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "682e31412d820556c5f23c86",
+        "cts" : 1747857729040,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "divakar v",
+        "mts" : 1747857729040,
+        "createdBy" : "63cf749921c7bb55c7368952",
+        "modifiedBy" : "63cf749921c7bb55c7368952",
+        "name" : "Stage-Data DB",
+        "description" : "Stage-Data DB",
+        "host" : "10.10.12.20:27017/apiwiz",
+        "scheme" : "mongodb",
+        "url" : "mongodb://apiwiz:Kufas2spaprunof@10.10.12.20:27017/apiwiz?authMechanism=DEFAULT&authSource=admin&tls=false",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz",
+          "password" : "Kufas2spaprunof",
+          "authenticationDatabase" : "admin",
+          "authenticationMechanism" : "DEFAULT"
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69479234a364ea598e8b4782",
+      "proxyid" : "69479234a364ea598e8b4781",
+      "name" : "NONA",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ "6943f457d4167432fe665c73" ],
+      "attachedProxies" : [ "69453f73b738d76489cfffe6" ],
+      "attachedConnectors" : [ "68398acdbb9e4f4731cd78c3", "682e31412d820556c5f23c86" ]
+    }, {
+      "id" : "69453f73b738d76489cfffe6",
+      "proxyid" : "69453f73b738d76489cfffe5",
+      "name" : "YOYO",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ {
+      "id" : "6943f457d4167432fe665c73",
+      "name" : "TestForLoopEvent",
+      "description" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "68398acdbb9e4f4731cd78c3",
+      "name" : "redis connection 1"
+    }, {
+      "id" : "682e31412d820556c5f23c86",
+      "name" : "Stage-Data DB"
+    } ]
+  }
+}
