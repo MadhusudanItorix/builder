@@ -1,5 +1,5 @@
 {
-  "cts" : 1767702744762,
+  "cts" : 1767702776917,
   "name" : "OPAA",
   "exportedBy" : "divakar v",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766155539115,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "divakar v",
-        "mts" : 1767702744753,
+        "mts" : 1767702776911,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "63cf749921c7bb55c7368952",
         "taggedTeams" : [ ],
@@ -43,8 +43,8 @@
             "vertexType" : "ENTITLEMENT",
             "name" : "m",
             "entitlementData" : {
-              "connectorId" : "66fa9be66f8f1845387da8ee",
-              "connectorName" : "opa-connector-a",
+              "connectorId" : "67c9807b37bdf74afa9e218b",
+              "connectorName" : "entitlement test",
               "policyId" : "674d4e9b98deb60368717a2d",
               "policyName" : "Role Based Access Control (RBAC)",
               "serverUrl" : "https://opa-connector.apiwiz.io",
@@ -129,10 +129,10 @@
     "collectionName" : "Connectors.Entitlement",
     "data" : {
       "apiBuilderEntitlementServerDTOData" : {
-        "id" : "66fa9be66f8f1845387da8ee",
-        "name" : "opa-connector-a",
-        "serverUrl" : "https://opa-connector.apiwiz.io",
-        "token" : "5432"
+        "id" : "67c9807b37bdf74afa9e218b",
+        "name" : "entitlement test",
+        "serverUrl" : "https://dev-opa-test.apiwiz.io",
+        "token" : ""
       },
       "apiBuilderEntitlementPolicyDTOData" : {
         "id" : "674d4e9b98deb60368717a2d",
@@ -149,7 +149,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "66fa9be66f8f1845387da8ee", "674d4e9b98deb60368717a2d" ]
+      "attachedConnectors" : [ "674d4e9b98deb60368717a2d", "67c9807b37bdf74afa9e218b" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -158,8 +158,8 @@
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "66fa9be66f8f1845387da8ee",
-      "name" : "opa-connector-a"
+      "id" : "67c9807b37bdf74afa9e218b",
+      "name" : "entitlement test"
     }, {
       "id" : "674d4e9b98deb60368717a2d",
       "name" : "Role Based Access Control (RBAC)"
