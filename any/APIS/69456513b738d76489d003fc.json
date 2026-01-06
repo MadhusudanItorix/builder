@@ -1,5 +1,5 @@
 {
-  "cts" : 1767702965962,
+  "cts" : 1767703004841,
   "name" : "OPAA",
   "exportedBy" : "divakar v",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766155539115,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "divakar v",
-        "mts" : 1767702965954,
+        "mts" : 1767703004822,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "63cf749921c7bb55c7368952",
         "taggedTeams" : [ ],
@@ -45,13 +45,13 @@
             "entitlementData" : {
               "connectorId" : "67c9807b37bdf74afa9e218b",
               "connectorName" : "entitlement test",
-              "policyId" : "674d4e9b98deb60368717a2d",
+              "policyId" : "68bac7286954cb35a4ca5725",
               "policyName" : "Role Based Access Control (RBAC)",
               "serverUrl" : "https://dev-opa-test.apiwiz.io",
               "packagePath" : "/app/rbac",
               "token" : "",
-              "inputData" : "",
-              "graphqlAuthorization" : false,
+              "inputData" : "{\"consumerId\": \"{{consumerId}}\", \"query\": {{{requestBody}}}}",
+              "graphqlAuthorization" : true,
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
@@ -70,7 +70,15 @@
             "vertexId" : "v1",
             "vertexType" : "START",
             "name" : "Request",
-            "requestVariables" : [ ],
+            "requestVariables" : [ {
+              "name" : "requestBody",
+              "reference" : "body",
+              "value" : "$",
+              "active" : true,
+              "source" : "raw",
+              "hide" : true,
+              "feelExpression" : false
+            } ],
             "mandatoryHeaders" : [ ],
             "mandatoryQueryParams" : [ ],
             "imported" : true,
@@ -145,7 +153,7 @@
         "token" : ""
       },
       "apiBuilderEntitlementPolicyDTOData" : {
-        "id" : "674d4e9b98deb60368717a2d",
+        "id" : "68bac7286954cb35a4ca5725",
         "name" : "Role Based Access Control (RBAC)",
         "packagePath" : "/app/rbac"
       }
@@ -159,7 +167,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "674d4e9b98deb60368717a2d", "67c9807b37bdf74afa9e218b" ]
+      "attachedConnectors" : [ "68bac7286954cb35a4ca5725", "67c9807b37bdf74afa9e218b" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -171,7 +179,7 @@
       "id" : "67c9807b37bdf74afa9e218b",
       "name" : "entitlement test"
     }, {
-      "id" : "674d4e9b98deb60368717a2d",
+      "id" : "68bac7286954cb35a4ca5725",
       "name" : "Role Based Access Control (RBAC)"
     } ]
   }
