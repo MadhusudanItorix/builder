@@ -1,5 +1,5 @@
 {
-  "cts" : 1767703004841,
+  "cts" : 1767703499065,
   "name" : "OPAA",
   "exportedBy" : "divakar v",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766155539115,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "divakar v",
-        "mts" : 1767703004822,
+        "mts" : 1767703499005,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "63cf749921c7bb55c7368952",
         "taggedTeams" : [ ],
@@ -45,13 +45,13 @@
             "entitlementData" : {
               "connectorId" : "67c9807b37bdf74afa9e218b",
               "connectorName" : "entitlement test",
-              "policyId" : "68bac7286954cb35a4ca5725",
-              "policyName" : "Role Based Access Control (RBAC)",
+              "policyId" : "695d03a361374932951673b0",
+              "policyName" : "sample 1",
               "serverUrl" : "https://dev-opa-test.apiwiz.io",
               "packagePath" : "/app/rbac",
               "token" : "",
-              "inputData" : "{\"consumerId\": \"{{consumerId}}\", \"query\": {{{requestBody}}}}",
-              "graphqlAuthorization" : true,
+              "inputData" : "{\n  \"user\": \"alice\",\n  \"action\": \"read\",\n  \"object\": \"id123\",\n  \"type\": \"dog\"\n}",
+              "graphqlAuthorization" : false,
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
@@ -70,15 +70,7 @@
             "vertexId" : "v1",
             "vertexType" : "START",
             "name" : "Request",
-            "requestVariables" : [ {
-              "name" : "requestBody",
-              "reference" : "body",
-              "value" : "$",
-              "active" : true,
-              "source" : "raw",
-              "hide" : true,
-              "feelExpression" : false
-            } ],
+            "requestVariables" : [ ],
             "mandatoryHeaders" : [ ],
             "mandatoryQueryParams" : [ ],
             "imported" : true,
@@ -113,6 +105,16 @@
         },
         "statusHistory" : [ {
           "status" : "Review",
+          "cts" : 1767703467242,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767703017219,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
+          "description" : "./"
+        }, {
+          "status" : "Review",
           "cts" : 1767702842911,
           "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : "./"
@@ -127,6 +129,7 @@
           "lastModifiedBy" : "Madhusudan Tripathy",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
@@ -153,8 +156,8 @@
         "token" : ""
       },
       "apiBuilderEntitlementPolicyDTOData" : {
-        "id" : "68bac7286954cb35a4ca5725",
-        "name" : "Role Based Access Control (RBAC)",
+        "id" : "695d03a361374932951673b0",
+        "name" : "sample 1",
         "packagePath" : "/app/rbac"
       }
     }
@@ -167,7 +170,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "68bac7286954cb35a4ca5725", "67c9807b37bdf74afa9e218b" ]
+      "attachedConnectors" : [ "67c9807b37bdf74afa9e218b", "695d03a361374932951673b0" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -179,8 +182,8 @@
       "id" : "67c9807b37bdf74afa9e218b",
       "name" : "entitlement test"
     }, {
-      "id" : "68bac7286954cb35a4ca5725",
-      "name" : "Role Based Access Control (RBAC)"
+      "id" : "695d03a361374932951673b0",
+      "name" : "sample 1"
     } ]
   }
 }
